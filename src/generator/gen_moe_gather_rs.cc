@@ -77,6 +77,7 @@ struct GemmGroupedV3GatherRSTS_Space {
           cute::make_tuple(_GemmGroupedV3{}),
           cute::make_tuple(make_gemm_v3_meta(_False{})),
           cute::make_tuple(
+              make_gather_rs_meta(cute::Int<8>{}),
               make_gather_rs_meta(cute::Int<5>{}),
               make_gather_rs_meta(cute::Int<4>{}),
               make_gather_rs_meta(cute::Int<3>{}),
@@ -105,6 +106,7 @@ struct GemmGroupedV3GatherRSTS_Space {
       cute::make_tuple(_GemmGroupedV3{}),
       cute::make_tuple(make_gemm_v3_meta(_True{}), make_gemm_v3_meta(_False{})),
       cute::make_tuple(
+            make_gather_rs_meta(cute::Int<8>{}),
             make_gather_rs_meta(cute::Int<4>{}),
             make_gather_rs_meta(cute::Int<3>{}),
             make_gather_rs_meta(cute::Int<2>{}),
